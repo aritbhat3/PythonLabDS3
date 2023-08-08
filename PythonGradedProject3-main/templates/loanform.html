@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Loan Form</title>
+</head>
+
+<body>
+
+  <form class="form-horizontal" action="{{url_for('predict')}}" method="post">
+
+    <h1>House Loan Eligibility Form</h1>
+
+    <br><br>
+
+    <b>
+      <label>Gender</label>
+
+      <select id="gender" name="gender" class="form-control">
+        <option value="0">Male</option>
+        <option value="1">Female</option>
+      </select>
+      <br><br>
+
+
+
+      <!-- Select Basic -->
+
+      <label class="col-md-4 control-label" for="married">Married</label>
+
+      <select id="married" name="married" class="form-control">
+        <option value="0">Yes</option>
+        <option value="1">No</option>
+      </select>
+
+      <br><br>
+
+      <!-- Select Basic -->
+
+      <label class="col-md-4 control-label" for="dependents">Dependents</label>
+
+      <select id="dependents" name="dependents" class="form-control">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+
+      <br><br>
+      <!-- Select Basic -->
+
+      <label class="col-md-4 control-label" for="education">Education</label>
+
+      <select id="education" name="education" class="form-control">
+        <option value="0">Graduate</option>
+        <option value="1">Not-Graduate</option>
+      </select>
+
+
+      <br><br>
+      <!-- Select Basic -->
+
+      <label class="col-md-4 control-label" for="self_employed">Self-Employed</label>
+
+      <select id="self_employed" name="self_employed" class="form-control">
+        <option value="0">Yes</option>
+        <option value="1">No</option>
+      </select>
+
+      <br><br>
+
+      <!-- Text input-->
+
+      <label class="col-md-4 control-label" for="applicantincome">Applicant Income($)</label>
+
+      <input id="applicantincome" name="applicantincome" type="number" placeholder="" class="form-control input-md">
+
+
+
+      <br><br>
+      <!-- Text input-->
+
+      <label class="col-md-4 control-label" for="coapplicantincome">Co-Applicant Income($)</label>
+
+      <input id="coapplicantincome" name="coapplicantincome" type="number" value="0" class="form-control input-md">
+
+
+      <br><br>
+
+      <!-- Text input-->
+
+      <label class="col-md-4 control-label" for="loan_amount">Loan Amount in thousands($)</label>
+
+      <input id="loan_amount" name="loan_amount" type="number" value="0" class="form-control input-md">
+
+
+
+      <br><br>
+      <!-- Text input-->
+
+      <label class="col-md-4 control-label" for="loan_amount_term">Loan Amount Term (in Months)</label>
+
+      <input id="loan_amount_term" name="loan_amount_term" type="number" class="form-control input-md">
+
+
+
+      <br><br>
+      <!-- Select Basic -->
+
+      <label class="col-md-4 control-label" for="credit_history">Credit History</label>
+
+      <select id="credit_history" name="credit_history" class="form-control">
+        <option value="0">yes</option>
+        <option value="1">no</option>
+      </select>
+
+
+      <br><br>
+      <!-- Select Basic -->
+
+      <label class="col-md-4 control-label" for="property_area">Property Area</label>
+
+      <select id="property_area" name="property_area" class="form-control">
+        <option value="0">semi-urban</option>
+        <option value="1">urban</option>
+        <option value="2">rural</option>
+      </select>
+    </b>
+
+
+
+
+    <br><br> <button id="sub" type="submit"> Predict Loan Status</button>
+
+  </form>
+</body>
+
+</html>

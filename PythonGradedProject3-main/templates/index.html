@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Index </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h2 class="word"> Hi {{session.username}}...!!! </h2>
+             </div></br></br></br>
+<!--                <h3 class="bottom">-->
+<!--                     Hi {{session.username}}!!</br></br>-->
+<!--                </h3></br></br></br>-->
+                </br></br></br>
+              <h2 color="black">{{ prediction_text }}</h2>
+              </br></br></br>
+                <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+          </div>
+        </div>
+    </body>
+</html>
